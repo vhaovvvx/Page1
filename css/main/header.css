@@ -13,7 +13,7 @@
 .slider {
   max-width: 1920px;
   width: 1920px;
-  background: url("./img/slider/backgroundMain.png") no-repeat;
+  background: url("../img/slider/backgroundMain.png") no-repeat;
 }
 .slider .header-main {
   background-color: rgba(0, 0, 0, 0.6);
@@ -103,8 +103,8 @@
 }
 .slider__container.grid.wide .container__content {
   line-height: 1.9;
-  max-width: 520px;
-  font-size: 14px;
+  max-width: 518px;
+  font-size: 13px;
   margin-bottom: 60px;
 }
 .slider__container.grid.wide .container--btn-shop {
