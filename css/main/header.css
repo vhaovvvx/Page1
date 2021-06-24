@@ -20,9 +20,7 @@
 .slider {
   max-width: 1920px;
   width: 1920px;
-/*   background: url("../img/slider/backgroundMain.png") no-repeat; */
   background: url("../img/slider/backgroundMain.png") no-repeat;
-  
 }
 .slider .header-main {
   background-color: rgba(0, 0, 0, 0.6);
@@ -117,7 +115,12 @@
 .slider__container.grid.wide .container--btn-shop {
   font-size: 15px;
   text-transform: uppercase;
+  opacity: 1;
   line-height: 1.714;
   border: 1px solid rgba(221, 221, 221);
   padding: 14px 45px;
+  transition: all 0.3s;
+}
+.slider__container.grid.wide .container--btn-shop:hover {
+  opacity: 0.6;
 }
