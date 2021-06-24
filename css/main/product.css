@@ -1,5 +1,5 @@
 .product.grid.wide {
-  margin-top: 75px;
+  margin-top: 71px;
 }
 .product.grid.wide .product__menu {
   font-size: 18px;
@@ -14,10 +14,11 @@
   border-bottom: 1px solid #dd2f31;
 }
 .product.grid.wide .product__menu li {
-  padding: 19px 21px;
+  padding: 26px 18px;
   text-transform: uppercase;
   cursor: pointer;
   transition: all 0.25s;
+  padding-bottom: 18px;
 }
 .product.grid.wide .product__menu li:hover {
   color: #dddddd;

@@ -61,10 +61,10 @@
   padding-left: 23px;
 }
 .footer__info--nav h3 {
-  padding-bottom: 10px;
+  padding-bottom: 22px;
 }
 .footer__info--nav--item {
-  margin: 6px 0;
+  padding-bottom: 5px;
 }
 .footer__info--nav .footer__info--nav--item .test {
   font-size: 14px;

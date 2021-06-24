@@ -18,7 +18,6 @@
 .slider {
   max-width: 1920px;
   width: 1920px;
-  height: 3000px;
   background: url("./img/slider/backgroundMain.png") no-repeat;
 }
 .slider .header-main {
@@ -93,10 +92,9 @@
   cursor: pointer;
 }
 .slider__container.grid.wide {
-  letter-spacing: 1px;
   align-items: center;
   margin-top: 204px;
-  margin-bottom: 250px;
+  margin-bottom: 253px;
 }
 .slider__container.grid.wide .container__title {
   font-size: 60px;
@@ -104,19 +102,18 @@
   line-height: 1.2;
 }
 .slider__container.grid.wide .container__title-min {
-  font-size: 39px;
+  font-size: 40px;
   font-weight: bold;
   margin-bottom: 20px;
 }
 .slider__container.grid.wide .container__content {
-  letter-spacing: 0;
   line-height: 1.9;
   max-width: 520px;
   font-size: 14px;
-  margin-bottom: 66px;
+  margin-bottom: 60px;
 }
 .slider__container.grid.wide .container--btn-shop {
-  font-size: 13px;
+  font-size: 15px;
   text-transform: uppercase;
   line-height: 1.714;
   border: 1px solid rgba(221, 221, 221);
@@ -158,7 +155,7 @@
   font-size: 14px;
 }
 .product.grid.wide {
-  margin-top: 75px;
+  margin-top: 71px;
 }
 .product.grid.wide .product__menu {
   font-size: 18px;
@@ -173,10 +170,11 @@
   border-bottom: 1px solid #dd2f31;
 }
 .product.grid.wide .product__menu li {
-  padding: 19px 21px;
+  padding: 26px 18px;
   text-transform: uppercase;
   cursor: pointer;
   transition: all 0.25s;
+  padding-bottom: 18px;
 }
 .product.grid.wide .product__menu li:hover {
   color: #dddddd;
@@ -243,7 +241,7 @@
   margin-left: 28px;
 }
 .client-say {
-  height: 544px;
+  height: 535px;
 }
 .client-say-siema {
   overflow: hidden;
@@ -256,16 +254,17 @@
   color: black;
 }
 .client-say__slider .slider-client-say .client-say__title {
-  font-size: 37px;
+  font-size: 36px;
   color: #000000;
   font-weight: bold;
   line-height: 0.833;
   margin-bottom: 54px;
 }
-.client-say__slider .slider-client-say .client-say__avatar {
+.client-say__slider .slider-client-say .client-say__avatar .avatar {
   margin: 0 auto;
+  width: 100%;
   max-width: 7%;
-  border-radius: 50%;
+  border-radius: 50% !important;
   background-color: #000000;
 }
 .client-say__slider .slider-client-say .client-say__content {
@@ -361,10 +360,10 @@
   padding-left: 23px;
 }
 .footer__info--nav h3 {
-  padding-bottom: 10px;
+  padding-bottom: 22px;
 }
 .footer__info--nav--item {
-  margin: 6px 0;
+  padding-bottom: 5px;
 }
 .footer__info--nav .footer__info--nav--item .test {
   font-size: 14px;

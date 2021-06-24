@@ -1,5 +1,5 @@
 .client-say {
-  height: 544px;
+  height: 535px;
 }
 .client-say-siema {
   overflow: hidden;
@@ -12,7 +12,7 @@
   color: black;
 }
 .client-say__slider .slider-client-say .client-say__title {
-  font-size: 37px;
+  font-size: 36px;
   color: #000000;
   font-weight: bold;
   line-height: 0.833;
