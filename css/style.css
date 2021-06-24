@@ -366,6 +366,7 @@
   padding-bottom: 5px;
 }
 .footer__info--nav .footer__info--nav--item .test {
+  font-weight: 100;
   font-size: 14px;
   color: #777777;
   line-height: 2.5;
