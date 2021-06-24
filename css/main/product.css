@@ -33,15 +33,20 @@
   border: 1px solid #fff;
   margin-bottom: 76px;
 }
+.product.grid.wide .product__container--items:hover .cart {
+  opacity: 1;
+}
 .product.grid.wide .product__container--items .cart {
   position: absolute;
   display: flex;
+  opacity: 0;
   flex-direction: column;
   text-align: center;
   top: 14%;
   right: 11%;
   transform: translate(-10%, -10%);
   z-index: 2;
+  transition: all 0.3s;
 }
 .product.grid.wide .product__container--items .cart-items {
   width: 35px;

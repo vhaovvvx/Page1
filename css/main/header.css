@@ -20,7 +20,7 @@
 .slider {
   max-width: 1920px;
   width: 1920px;
-  background: url("../img/slider/backgroundMain.png") no-repeat;
+  background: url("./img/slider/backgroundMain.png") no-repeat;
 }
 .slider .header-main {
   background-color: rgba(0, 0, 0, 0.6);

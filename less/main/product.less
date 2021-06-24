@@ -33,16 +33,20 @@
       transition: all 0.25s;
       border: 1px solid #fff;
       margin-bottom: 76px;
-
+      &:hover .cart {
+        opacity: 1;
+      }
       & .cart {
         position: absolute;
         display: flex;
+        opacity: 0;
         flex-direction: column;
         text-align: center;
         top: 14%;
         right: 11%;
         transform: translate(-10%, -10%);
         z-index: 2;
+        transition: all 0.3s;
 
         &-items {
           width: 35px;
