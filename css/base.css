@@ -1,5 +1,5 @@
 /*reset css*/
-@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap"); */
 
 html,
 body,
@@ -834,3 +834,7 @@ summary {
   -webkit-text-fill-color: white;
   transition: background-color 5000s ease-in-out 0s;
 } */
+
+* {
+  font-family: "Poppins" !important;
+}
