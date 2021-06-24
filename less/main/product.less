@@ -1,0 +1,92 @@
+@rgbwhite: rgba(221, 221, 221);
+
+.product.grid.wide {
+  margin-top: 75px;
+  .product__menu {
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.333;
+
+    display: flex;
+    border-bottom: 1px solid rgb(221, 221, 221);
+    & .actived {
+      color: rgb(221, 47, 49);
+      border-bottom: 1px solid rgb(221, 47, 49);
+    }
+    & li {
+      padding: 19px 21px;
+      text-transform: uppercase;
+      cursor: pointer;
+      transition: all 0.25s;
+      &:hover {
+        color: rgb(221, 221, 221);
+      }
+    }
+  }
+  .product__container {
+    margin-top: 36px;
+    &--items {
+      position: relative;
+      padding: 0 15px;
+      transition: all 0.25s;
+      border: 1px solid #fff;
+      margin-bottom: 70px;
+      & img {
+      }
+      & .cart {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        top: 14%;
+        right: 11%;
+        transform: translate(-10%, -10%);
+        z-index: 2;
+
+        &-items {
+          width: 35px;
+          height: 30px;
+          margin-bottom: 21px;
+          align-items: center;
+          text-align: center;
+          justify-content: center;
+          display: flex;
+          transition: all 0.3s;
+        }
+        .cart-items:hover {
+          background-color: red;
+        }
+        .cart-items:hover path {
+          color: @rgbwhite;
+        }
+      }
+      .fa-shopping-basket path,
+      .fa-eye path,
+      .fa-heart path,
+      .fa-exchange-alt path {
+        color: rgb(119, 119, 119);
+      }
+      .fa-shopping-basket,
+      .fa-eye,
+      .fa-heart,
+      .fa-exchange-alt {
+        font-size: 14px;
+      }
+
+      &:hover {
+        cursor: pointer;
+        border: 1px solid rgba(0, 0, 0, 0.2);
+        box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
+      }
+    }
+    .container__title {
+      font-size: 14px;
+      margin-top: 20px;
+      margin-left: 28px;
+    }
+    .container__price {
+      margin-left: 28px;
+    }
+  }
+}

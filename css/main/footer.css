@@ -1,0 +1,101 @@
+.footer {
+  height: 669px;
+  position: relative;
+  background-color: #222222;
+}
+.footer__slogan {
+  padding-top: 95px;
+  padding-bottom: 39px;
+  max-width: 748px;
+  margin: 0 auto;
+  text-align: center;
+}
+.footer__slogan--content {
+  max-width: 748px;
+  color: #777777;
+  line-height: 1.714;
+  font-size: 14px;
+  padding: 25px 0;
+  padding-right: 2px;
+  margin: 0 auto;
+}
+.footer__slogan--nav {
+  justify-content: center;
+}
+.footer__slogan--nav .fa-facebook-f path,
+.footer__slogan--nav .fa-twitter path,
+.footer__slogan--nav .fa-google-plus-g path,
+.footer__slogan--nav .fa-youtube path {
+  color: #777777;
+}
+.footer__slogan--nav .fa-facebook-f,
+.footer__slogan--nav .fa-twitter,
+.footer__slogan--nav .fa-google-plus-g,
+.footer__slogan--nav .fa-youtube {
+  line-height: 1.667;
+  font-size: 18px;
+}
+.footer__slogan--nav .nav--item {
+  margin: 14px 15px;
+  font-size: 18px;
+  padding-left: 14px;
+}
+.footer__info {
+  border-top: 1px solid #444444;
+}
+.footer__info--nav {
+  margin-top: 70px;
+  font-size: 18px;
+  color: #ffffff;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.667;
+}
+.footer__info--nav.myaccount {
+  padding-left: 9px;
+}
+.footer__info--nav.information {
+  padding-left: 16px;
+}
+.footer__info--nav.quick-link {
+  padding-left: 23px;
+}
+.footer__info--nav h3 {
+  padding-bottom: 10px;
+}
+.footer__info--nav--item {
+  margin: 6px 0;
+}
+.footer__info--nav .footer__info--nav--item .test {
+  font-size: 14px;
+  color: #777777;
+  line-height: 2.5;
+  margin: 14px 0;
+  text-transform: initial;
+}
+.footer__info--nav .footer__info--nav--item .fa-map-marker-alt path,
+.footer__info--nav .fa-phone path,
+.footer__info--nav .fa-envelope path,
+.footer__info--nav .fa-clock path {
+  color: #777777;
+}
+.footer__info--nav .footer__info--nav--item .fa-map-marker-alt,
+.footer__info--nav .fa-phone,
+.footer__info--nav .fa-envelope,
+.footer__info--nav .fa-clock {
+  width: 18px;
+  margin-right: 10px;
+  font-size: 16px;
+}
+.footer__copy-right {
+  background-color: #111111;
+  font-size: 14px;
+  line-height: 2.143;
+}
+.footer__copy-right p {
+  margin-top: 33px;
+  height: 66px;
+  line-height: 65px;
+  color: #777777;
+  text-align: center;
+}

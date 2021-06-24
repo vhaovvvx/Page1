@@ -1,0 +1,85 @@
+.product.grid.wide {
+  margin-top: 75px;
+}
+.product.grid.wide .product__menu {
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.333;
+  display: flex;
+  border-bottom: 1px solid #dddddd;
+}
+.product.grid.wide .product__menu .actived {
+  color: #dd2f31;
+  border-bottom: 1px solid #dd2f31;
+}
+.product.grid.wide .product__menu li {
+  padding: 19px 21px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.25s;
+}
+.product.grid.wide .product__menu li:hover {
+  color: #dddddd;
+}
+.product.grid.wide .product__container {
+  margin-top: 36px;
+}
+.product.grid.wide .product__container--items {
+  position: relative;
+  padding: 0 15px;
+  transition: all 0.25s;
+  border: 1px solid #fff;
+  margin-bottom: 70px;
+}
+.product.grid.wide .product__container--items .cart {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  top: 14%;
+  right: 11%;
+  transform: translate(-10%, -10%);
+  z-index: 2;
+}
+.product.grid.wide .product__container--items .cart-items {
+  width: 35px;
+  height: 30px;
+  margin-bottom: 21px;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  transition: all 0.3s;
+}
+.product.grid.wide .product__container--items .cart .cart-items:hover {
+  background-color: red;
+}
+.product.grid.wide .product__container--items .cart .cart-items:hover path {
+  color: rgba(221, 221, 221);
+}
+.product.grid.wide .product__container--items .fa-shopping-basket path,
+.product.grid.wide .product__container--items .fa-eye path,
+.product.grid.wide .product__container--items .fa-heart path,
+.product.grid.wide .product__container--items .fa-exchange-alt path {
+  color: #777777;
+}
+.product.grid.wide .product__container--items .fa-shopping-basket,
+.product.grid.wide .product__container--items .fa-eye,
+.product.grid.wide .product__container--items .fa-heart,
+.product.grid.wide .product__container--items .fa-exchange-alt {
+  font-size: 14px;
+}
+.product.grid.wide .product__container--items:hover {
+  cursor: pointer;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
+}
+.product.grid.wide .product__container .container__title {
+  font-size: 14px;
+  margin-top: 20px;
+  margin-left: 28px;
+}
+.product.grid.wide .product__container .container__price {
+  margin-left: 28px;
+}
