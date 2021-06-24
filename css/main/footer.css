@@ -67,8 +67,9 @@
   padding-bottom: 5px;
 }
 .footer__info--nav .footer__info--nav--item .test {
+  text-decoration: none !important;
   all: revert;
-  font-weight: 100 !important;
+  font-weight: 400;
   font-size: 14px;
   color: #777777;
   line-height: 2.5;

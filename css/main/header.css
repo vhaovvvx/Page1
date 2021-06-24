@@ -1,3 +1,7 @@
+* {
+  font-family: "Poppins";
+  color: rgba(221, 221, 221);
+}
 .text-center {
   text-align: center;
 }
@@ -6,6 +10,9 @@
 }
 .text-black {
   color: black;
+}
+.text-gray {
+  color: #777777;
 }
 .bold {
   font-weight: bold;
@@ -93,12 +100,10 @@
 }
 .slider__container.grid.wide .container__title {
   font-size: 60px;
-  font-weight: bold;
   line-height: 1.2;
 }
 .slider__container.grid.wide .container__title-min {
   font-size: 40px;
-  font-weight: bold;
   margin-bottom: 20px;
 }
 .slider__container.grid.wide .container__content {
