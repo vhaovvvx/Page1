@@ -30,6 +30,7 @@
       media="screen"
       href="./css/style.css"
     />
+    <link rel="stylesheet" href="./css/main/mediaquery.css" />
 
     <script src="./less/less.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -40,6 +41,7 @@
   </head>
   <body>
     <div class="app">
+      <div class="overlay items-show"></div>
       <div class="slider">
         <header class="header-main">
           <div class="header grid wide">
@@ -62,6 +64,26 @@
               </ul>
             </div>
             <div class="header__user c-2">
+              <div class="header__user--bar items-show">
+                <div class="header__user--bar-nav">
+                  <ul class="header__nav--items">
+                    <i class="fas fa-times"></i>
+                    <li><a href="#">Home</a></li>
+
+                    <li><a href="#">Pages</a></li>
+
+                    <li><a href="#">Classes</a></li>
+
+                    <li><a href="#">Portfolio</a></li>
+
+                    <li><a href="#">Blog</a></li>
+
+                    <li><a href="#">Contacts</a></li>
+                  </ul>
+                </div>
+                <i class="fas fa-bars"></i>
+              </div>
+
               <div class="header__user--items separate">
                 <i class="fas fa-search"></i>
               </div>
@@ -87,9 +109,9 @@
         </section>
 
         <section class="category__product grid wide row">
-          <div class="product__dumbbells c-4">
+          <div class="product__dumbbells l-4 m-12 c-12">
             <div class="product-items product__dumbbells--img">
-              <img src="./css/img/categoryProduct/dubbells.png" alt="" />
+              <!-- <img src="./css/img/categoryProduct/dubbells.png" alt="" /> -->
             </div>
             <div class="product-items product__dumbbells--content">
               <h4 class="product__content-logo">
@@ -107,7 +129,7 @@
             </div>
           </div>
 
-          <div class="product__strength c-4">
+          <div class="product__strength l-4 m-12 c-12">
             <div class="product-items product__strength--content">
               <h4 class="product__content--logo">
                 <img
@@ -123,13 +145,13 @@
               </h4>
             </div>
             <div class="product-items product__strength--img">
-              <img src="./css/img/categoryProduct/strength.png" alt="" />
+              <!-- <img src="./css/img/categoryProduct/strength.png" alt="" /> -->
             </div>
           </div>
 
-          <div class="product__power c-4">
+          <div class="product__power l-4 m-12 c-12">
             <div class="product-items product__power--img">
-              <img src="./css/img/categoryProduct/power.png" alt="" />
+              <!-- <img src="./css/img/categoryProduct/power.png" alt="" /> -->
             </div>
             <div class="product-items product__power--content">
               <h4 class="product__content--logo">
@@ -157,7 +179,7 @@
             <li class="product__menu--btn text-black">most reviews</li>
           </ul>
           <div class="product__container row">
-            <div class="product__container--items c-3">
+            <div class="product__container--items c-12 l-3 m-6">
               <div class="cart">
                 <div class="cart-items add-cart">
                   <i class="fas fa-shopping-basket"></i>
@@ -179,7 +201,7 @@
               <div class="container__title text-black">Body Champ Cardio</div>
               <div class="container__price text-black bold">$342.00</div>
             </div>
-            <div class="product__container--items c-3">
+            <div class="product__container--items c-12 l-3 m-6">
               <div class="cart">
                 <div class="cart-items add-cart">
                   <i class="fas fa-shopping-basket"></i>
@@ -201,7 +223,7 @@
               <div class="container__title text-black">Body Solid GCEC340</div>
               <div class="container__price text-black bold">$214.00</div>
             </div>
-            <div class="product__container--items c-3">
+            <div class="product__container--items c-12 l-3 m-6">
               <div class="cart">
                 <div class="cart-items add-cart">
                   <i class="fas fa-shopping-basket"></i>
@@ -225,7 +247,7 @@
               </div>
               <div class="container__price text-black bold">$421.00</div>
             </div>
-            <div class="product__container--items c-3">
+            <div class="product__container--items c-12 l-3 m-6">
               <div class="cart">
                 <div class="cart-items add-cart">
                   <i class="fas fa-shopping-basket"></i>
@@ -244,7 +266,7 @@
               <div class="container__title text-black">ETHOS GHD</div>
               <div class="container__price text-black bold">$152.00</div>
             </div>
-            <div class="product__container--items c-3">
+            <div class="product__container--items c-12 l-3 m-6">
               <div class="cart">
                 <div class="cart-items add-cart">
                   <i class="fas fa-shopping-basket"></i>
@@ -268,7 +290,7 @@
               </div>
               <div class="container__price text-black bold">$252.00</div>
             </div>
-            <div class="product__container--items c-3">
+            <div class="product__container--items c-12 l-3 m-6">
               <div class="cart">
                 <div class="cart-items add-cart">
                   <i class="fas fa-shopping-basket"></i>
@@ -290,7 +312,7 @@
               <div class="container__title text-black">Weight Bench</div>
               <div class="container__price text-black bold">$412.00</div>
             </div>
-            <div class="product__container--items c-3">
+            <div class="product__container--items c-12 l-3 m-6">
               <div class="cart">
                 <div class="cart-items add-cart">
                   <i class="fas fa-shopping-basket"></i>
@@ -314,7 +336,7 @@
               </div>
               <div class="container__price text-black bold">$300.00</div>
             </div>
-            <div class="product__container--items c-3">
+            <div class="product__container--items c-12 l-3 m-6">
               <div class="cart">
                 <div class="cart-items add-cart">
                   <i class="fas fa-shopping-basket"></i>
@@ -400,34 +422,34 @@
           </div>
         </section>
         <section class="brand grid wide row">
-          <div class="brand__items c-2">
+          <div class="brand__items l-2 m-4 c-6">
             <img
               src="./css/img/BrandLogo/fitness-center.png"
               alt="fitness center"
             />
           </div>
-          <div class="brand__items c-2">
+          <div class="brand__items l-2 m-4 c-6">
             <img src="./css/img/BrandLogo/sports-gym.png" alt="sports gym" />
           </div>
-          <div class="brand__items c-2">
+          <div class="brand__items l-2 m-4 c-6">
             <img
               src="./css/img/BrandLogo/health-and-fitness.png"
               alt="health and fitness"
             />
           </div>
-          <div class="brand__items c-2">
+          <div class="brand__items l-2 m-4 c-6">
             <img
               src="./css/img/BrandLogo/best-local-gym.png"
               alt="best local gym"
             />
           </div>
-          <div class="brand__items c-2">
+          <div class="brand__items l-2 m-4 c-6">
             <img
               src="./css/img/BrandLogo/power-lifter-gymClub.png"
               alt="power lifter gymClub"
             />
           </div>
-          <div class="brand__items c-2">
+          <div class="brand__items l-2 m-4 c-6">
             <img
               src="./css/img/BrandLogo/fitness-club-and-gym.png"
               alt="fitness club and gym"
@@ -468,7 +490,7 @@
             </ul>
           </div>
           <div class="footer__info grid wide row">
-            <ul class="footer__info--nav contact c-3">
+            <ul class="footer__info--nav contact l-3 m-3 c-6">
               <h3>contact us</h3>
               <li class="footer__info--nav--item">
                 <i class="fas fa-map-marker-alt"></i>
@@ -487,7 +509,7 @@
                 <a href="#" class="test">9:00 - 20:00 All day</a>
               </li>
             </ul>
-            <ul class="footer__info--nav myaccount c-3">
+            <ul class="footer__info--nav myaccount l-3 m-3 c-6">
               <h3>my account</h3>
               <li class="footer__info--nav--item">
                 <a href="#" class="test">My account</a>
@@ -504,7 +526,7 @@
                 <a href="#" class="test">Login</a>
               </li>
             </ul>
-            <ul class="footer__info--nav information c-3">
+            <ul class="footer__info--nav information l-3 m-3 c-6">
               <h3>information</h3>
               <li class="footer__info--nav--item">
                 <a href="#" class="test">About us</a>
@@ -521,7 +543,7 @@
                 <a href="#" class="test">Privacy Policy</a>
               </li>
             </ul>
-            <ul class="footer__info--nav quick-link c-3">
+            <ul class="footer__info--nav quick-link l-3 m-3 c-6">
               <h3>quick link</h3>
               <li class="footer__info--nav--item">
                 <a href="#" class="test">New user</a>

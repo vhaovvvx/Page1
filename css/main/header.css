@@ -2,6 +2,17 @@
   font-family: "Poppins";
   color: rgba(221, 221, 221);
 }
+.overlay.open {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transition: all 0.3s;
+  background-color: rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  z-index: 0;
+}
 .text-center {
   text-align: center;
 }
@@ -19,7 +30,7 @@
 }
 .slider {
   max-width: 1920px;
-  width: 1920px;
+  width: 100%;
   background: url("../img/slider/backgroundMain.png") no-repeat;
 }
 .slider .header-main {
@@ -53,6 +64,46 @@
 }
 .slider .header.grid.wide .header__user {
   display: flex;
+}
+.slider .header.grid.wide .header__user--bar {
+  cursor: pointer;
+  display: none;
+}
+.slider .header.grid.wide .header__user--bar-nav {
+  position: absolute;
+  right: -5px;
+  top: -30px;
+  width: 300px;
+  height: 1000px;
+  border-radius: 5px 0 0 5px;
+  background-color: white;
+  transform: translateX(100%);
+  transition: all 0.5s;
+  z-index: 100;
+}
+.slider .header.grid.wide .header__user--bar-nav .header__nav--items {
+  text-align: center;
+}
+.slider .header.grid.wide .header__user--bar-nav .header__nav--items .fa-times {
+  position: relative;
+  left: 45%;
+}
+.slider .header.grid.wide .header__user--bar-nav .header__nav--items a {
+  color: black;
+}
+.slider .header.grid.wide .header__user--bar-nav .header__nav--items li {
+  border-bottom: 1px solid #b9b6b6;
+  padding: 10px 0;
+}
+.slider .header.grid.wide .header__user--bar-nav .header__nav--items li:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.slider .header.grid.wide .header__user--bar .fa-bars {
+  font-size: 40px;
+}
+.slider .header.grid.wide .header__user--bar:hover .fa-bars path {
+  color: rgba(155, 153, 153, 0.8);
+  transition: all 0.3s;
 }
 .slider .header.grid.wide .header__user--items {
   position: relative;
@@ -110,8 +161,8 @@
 }
 .slider__container.grid.wide .container__content {
   line-height: 1.9;
-  max-width: 518px;
-  font-size: 13px;
+  max-width: 530px;
+  font-size: 14px;
   margin-bottom: 60px;
 }
 .slider__container.grid.wide .container--btn-shop {

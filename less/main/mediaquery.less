@@ -1,0 +1,114 @@
+@media (max-width: 740px) {
+  .header__nav {
+    transform: translateY(-300px);
+    transition: all 1s;
+  }
+  .slider .header.grid.wide {
+    // justify-content: space-between;
+  }
+  .header__nav {
+    // display: none;
+  }
+  .product__dumbbells,
+  .product__strength,
+  .product__power {
+    display: block;
+  }
+  .product__strength {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .product-items {
+    max-width: initial !important;
+    width: 100%;
+  }
+
+  .product.grid.wide .product__container--items {
+    text-align: center;
+  }
+  .owl-carousel .owl-item img {
+    max-width: 15% !important;
+  }
+
+  .footer__info--nav {
+    &.contact,
+    &.myaccount,
+    &.information,
+    &.quick-link {
+      padding-left: 40px;
+    }
+    & h3 {
+      font-size: 16px;
+    }
+  }
+}
+
+@media (min-width: 740px) and (max-width: 1024px) {
+  .slider .header.grid.wide {
+    justify-content: space-between;
+  }
+  .header__nav {
+    transform: translateY(-300px);
+    transition: all 1s;
+  }
+  .product__dumbbells,
+  .product__strength,
+  .product__power {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  .product-items {
+    width: 100%;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1311px) {
+  .header__user {
+    &--bar {
+      display: flex !important;
+      position: absolute;
+      right: 5px;
+      transform: translateY(-50%);
+    }
+    &--items {
+      display: none;
+    }
+  }
+  .header__nav {
+    transition: 1s ease-in-out;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 1024px) {
+  .owl-carousel .owl-item img {
+    max-width: 15% !important;
+  }
+}
+
+@media (max-width: 1311px) {
+  .header__user {
+    &--bar {
+      display: flex !important;
+      position: absolute;
+      right: 5px;
+      transform: translateY(-50%);
+    }
+    &--items {
+      display: none;
+    }
+    .header__nav {
+      transition: 1s ease-in-out;
+      transform: translateY(0);
+    }
+  }
+}
+
+@media (min-width: 1311px) {
+  .header__nav {
+    transition: 1s ease-in-out;
+    transform: translateY(0);
+  }
+}

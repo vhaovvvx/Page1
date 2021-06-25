@@ -1,5 +1,4 @@
 .footer {
-  height: 669px;
   position: relative;
   background-color: #222222;
 }
@@ -96,9 +95,11 @@
   line-height: 2.143;
 }
 .footer__copy-right p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-top: 33px;
   height: 66px;
-  line-height: 65px;
   color: #777777;
   text-align: center;
 }

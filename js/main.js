@@ -10,5 +10,26 @@ btnsActive.forEach((btn) => {
   });
 });
 
-const a = $$(".footer__slogan--content");
-console.log(a);
+function translateItem() {
+  function openNavbar() {
+    const overlay = $$(".overlay");
+
+    const navMobiElement = $$(".header__user--bar-nav");
+    const btnToggleNavMobi = navMobiElement.classList.toggle("show");
+    if (btnToggleNavMobi) {
+      navMobiElement.style.transform = "translateX(0%)";
+      overlay.classList.add("open");
+    } else {
+      overlay.classList.remove("open");
+
+      navMobiElement.style.transform = "translateX(100%)";
+    }
+  }
+  const btnNavMobiElement = [...$$$(".items-show")];
+  btnNavMobiElement.forEach((element) => {
+    element.addEventListener("click", () => {
+      openNavbar();
+    });
+  });
+}
+translateItem();

@@ -7,6 +7,18 @@
   color: @rgbwhite;
 }
 
+.overlay.open {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transition: all 0.3s;
+  background-color: rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  z-index: 0;
+}
+
 .text-center {
   text-align: center;
 }
@@ -28,7 +40,7 @@
 
 .slider {
   max-width: 1920px;
-  width: 1920px;
+  width: 100%;
   background: url("../img/slider/backgroundMain.png") no-repeat;
   .header-main {
     background-color: rgba(0, 0, 0, 0.6);
@@ -63,6 +75,48 @@
 
       .header__user {
         display: flex;
+        &--bar {
+          cursor: pointer;
+          // right: 0;
+          display: none;
+          &-nav {
+            position: absolute;
+            right: -5px;
+            top: -30px;
+            width: 300px;
+            height: 1000px;
+            border-radius: 5px 0 0 5px;
+            background-color: white;
+            transform: translateX(100%);
+            transition: all 0.5s;
+            z-index: 100;
+
+            & .header__nav--items {
+              text-align: center;
+              & .fa-times {
+                position: relative;
+                left: 45%;
+              }
+              & a {
+                color: black;
+              }
+              & li {
+                border-bottom: 1px solid rgb(185, 182, 182);
+                padding: 10px 0;
+              }
+              & li:hover {
+                background-color: rgba(0, 0, 0, 0.5);
+              }
+            }
+          }
+          & .fa-bars {
+            font-size: 40px;
+          }
+          &:hover .fa-bars path {
+            color: rgba(155, 153, 153, 0.8);
+            transition: all 0.3s;
+          }
+        }
 
         &--items {
           position: relative;
@@ -130,8 +184,8 @@
     }
     .container__content {
       line-height: 1.9;
-      max-width: 518px;
-      font-size: 13px;
+      max-width: 530px;
+      font-size: 14px;
       margin-bottom: 60px;
     }
     .container--btn-shop {
