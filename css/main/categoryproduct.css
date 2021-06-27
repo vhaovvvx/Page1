@@ -22,14 +22,14 @@
   background: url("../img/categoryProduct/power.png") center no-repeat;
 }
 .category__product.grid.wide.row .product__content--title {
-  margin: 20px 0;
+  margin: 19px 0;
   line-height: 1.2;
   font-size: 18px;
   font-weight: bold;
   text-transform: uppercase;
 }
 .category__product.grid.wide.row .product__content--body {
-  margin-top: 4px;
+  margin-bottom: 4px;
   max-width: 294px;
   line-height: 1.714;
   font-size: 14px;

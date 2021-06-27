@@ -39,8 +39,8 @@
 }
 
 .slider {
-  max-width: 1920px;
-  width: 100%;
+  max-width: 100%;
+  width: 1920px;
   background: url("../img/slider/backgroundMain.png") no-repeat;
   .header-main {
     background-color: rgba(0, 0, 0, 0.6);
@@ -51,6 +51,7 @@
     height: 100px;
     z-index: 1;
     &.grid.wide {
+      padding-top: 5px;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -59,6 +60,7 @@
         padding-right: 6px;
       }
       .header__nav {
+        margin-left: -4px;
         .header__nav--items {
           display: flex;
           font-size: @font-size;
@@ -92,6 +94,24 @@
             z-index: 100;
 
             & .header__nav--items {
+              & .tools {
+                height: 46px;
+                justify-content: space-around;
+                & .header__user--items-2 {
+                  width: 35px;
+                  height: 35px;
+                  &:hover .fa-search path,
+                  &:hover .fa-user path,
+                  &:hover .fa-shopping-basket path {
+                    color: red;
+                  }
+                  & .fa-search path,
+                  .fa-user path,
+                  .fa-shopping-basket path {
+                    color: black;
+                  }
+                }
+              }
               text-align: center;
               & .fa-times {
                 position: relative;
@@ -116,6 +136,9 @@
             color: rgba(155, 153, 153, 0.8);
             transition: all 0.3s;
           }
+        }
+        & .tools {
+          display: flex;
         }
 
         &--items {
@@ -169,32 +192,32 @@
     margin-bottom: 253px;
 
     .container__title {
-      font-size: 60px;
+      font-size: 59.5px;
       // font-weight: bold;
       font-weight: bold;
 
       line-height: 1.2;
     }
     .container__title-min {
-      font-size: 40px;
+      font-size: 39.7px;
       // font-weight: bold;
       font-weight: bold;
 
-      margin-bottom: 20px;
+      margin-bottom: 22px;
     }
     .container__content {
-      line-height: 1.9;
+      line-height: 1.714;
       max-width: 530px;
       font-size: 14px;
-      margin-bottom: 60px;
+      margin-bottom: 69px;
     }
     .container--btn-shop {
-      font-size: 15px;
+      font-size: 14px;
       text-transform: uppercase;
       opacity: 1;
       line-height: 1.714;
       border: 1px solid @rgbwhite;
-      padding: 14px 45px;
+      padding: 14px 47px;
       transition: all 0.3s;
     }
     .container--btn-shop:hover {

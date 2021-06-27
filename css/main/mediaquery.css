@@ -3,6 +3,9 @@
     transform: translateY(-300px);
     transition: all 1s;
   }
+  .container__title {
+    font-size: 57px;
+  }
   .product__dumbbells,
   .product__strength,
   .product__power {

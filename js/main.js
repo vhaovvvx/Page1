@@ -21,7 +21,6 @@ function translateItem() {
       overlay.classList.add("open");
     } else {
       overlay.classList.remove("open");
-
       navMobiElement.style.transform = "translateX(100%)";
     }
   }
@@ -33,3 +32,11 @@ function translateItem() {
   });
 }
 translateItem();
+
+const links = $$$(".scroll_to");
+links.forEach((item) => {
+  item.addEventListener("click", () => {
+    const el = document.getElementById(item.getAttribute("data-link"));
+    el.scrollIntoView({ behaviour: "smooth", block: "end" });
+  });
+});

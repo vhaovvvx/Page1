@@ -46,17 +46,19 @@
         <header class="header-main">
           <div class="header grid wide">
             <div class="header__logo c-3">
-              <img src="./css/img/logo/logo.png" alt="logo" />
+              <a href="#">
+                <img src="./css/img/logo/logo.png" alt="logo" />
+              </a>
             </div>
             <div class="header__nav c-7">
               <ul class="header__nav--items">
                 <li><a href="#">Home</a></li>
 
-                <li><a href="#">Pages</a></li>
+                <li style="margin-left: -1px"><a href="#">Pages</a></li>
 
-                <li><a href="#">Classes</a></li>
+                <li style="margin-left: -1px"><a href="#">Classes</a></li>
 
-                <li><a href="#">Portfolio</a></li>
+                <li style="margin-left: 1px"><a href="#">Portfolio</a></li>
 
                 <li><a href="#">Blog</a></li>
 
@@ -68,6 +70,17 @@
                 <div class="header__user--bar-nav">
                   <ul class="header__nav--items">
                     <i class="fas fa-times"></i>
+                    <div class="tools">
+                      <div class="header__user--items-2 separate">
+                        <i class="fas fa-search"></i>
+                      </div>
+                      <div class="header__user--items-2 separate">
+                        <i class="fas fa-shopping-basket"></i>
+                      </div>
+                      <div class="header__user--items-2">
+                        <i class="fas fa-user"></i>
+                      </div>
+                    </div>
                     <li><a href="#">Home</a></li>
 
                     <li><a href="#">Pages</a></li>
@@ -83,15 +96,16 @@
                 </div>
                 <i class="fas fa-bars"></i>
               </div>
-
-              <div class="header__user--items separate">
-                <i class="fas fa-search"></i>
-              </div>
-              <div class="header__user--items separate">
-                <i class="fas fa-shopping-basket"></i>
-              </div>
-              <div class="header__user--items">
-                <i class="fas fa-user"></i>
+              <div class="tools">
+                <div class="header__user--items separate">
+                  <i class="fas fa-search"></i>
+                </div>
+                <div class="header__user--items separate">
+                  <i class="fas fa-shopping-basket"></i>
+                </div>
+                <div class="header__user--items">
+                  <i class="fas fa-user"></i>
+                </div>
               </div>
             </div>
           </div>
@@ -105,7 +119,9 @@
             industry.<br />Lorem Ipsum has been the industry's standard dummy
             text ever since the 1500s, when an unknown printer
           </p>
-          <a href="#" class="container--btn-shop">shop now</a>
+          <a data-link="product" class="container--btn-shop scroll_to"
+            >shop now</a
+          >
         </section>
 
         <section class="category__product grid wide row">
@@ -114,7 +130,7 @@
               <!-- <img src="./css/img/categoryProduct/dubbells.png" alt="" /> -->
             </div>
             <div class="product-items product__dumbbells--content">
-              <h4 class="product__content-logo">
+              <h4 style="padding-top: 16px" class="product__content-logo">
                 <img
                   src="./css/img/categoryProduct/dubbells-icon.png"
                   alt="dubbells-icons"
@@ -123,7 +139,7 @@
               <h4 class="product__content--title text-black">dumbbells</h4>
 
               <h4 class="product__content--body text-gray">
-                Lorem lpsum is simply dummy text of the printing and typestting
+                Lorem lpsum is simply dummy text of the printing and typesetting
                 industry.
               </h4>
             </div>
@@ -140,7 +156,7 @@
               <h4 class="product__content--title text-black">strength</h4>
 
               <h4 class="product__content--body text-gray">
-                Lorem lpsum is simply dummy text of the printing and typestting
+                Lorem lpsum is simply dummy text of the printing and typesetting
                 industry.
               </h4>
             </div>
@@ -165,14 +181,14 @@
               </h4>
 
               <h4 class="product__content--body text-gray">
-                Lorem lpsum is simply dummy text of the printing and typestting
+                Lorem lpsum is simply dummy text of the printing and typesetting
                 industry.
               </h4>
             </div>
           </div>
         </section>
 
-        <section class="product grid wide">
+        <section class="product grid wide" id="product">
           <ul class="product__menu">
             <li class="product__menu--btn text-black actived">top sellers</li>
             <li class="product__menu--btn text-black">featured</li>
@@ -180,183 +196,201 @@
           </ul>
           <div class="product__container row">
             <div class="product__container--items c-12 l-3 m-6">
-              <div class="cart">
-                <div class="cart-items add-cart">
-                  <i class="fas fa-shopping-basket"></i>
+              <div class="product__container--items-div-hover">
+                <div class="cart">
+                  <div class="cart-items add-cart">
+                    <i class="fas fa-shopping-basket"></i>
+                  </div>
+                  <div class="cart-items eyes">
+                    <i class="fas fa-eye"></i>
+                  </div>
+                  <div class="cart-items like">
+                    <i class="fas fa-heart"></i>
+                  </div>
+                  <div class="cart-items exchange">
+                    <i class="fas fa-exchange-alt"></i>
+                  </div>
                 </div>
-                <div class="cart-items eyes">
-                  <i class="fas fa-eye"></i>
-                </div>
-                <div class="cart-items like">
-                  <i class="fas fa-heart"></i>
-                </div>
-                <div class="cart-items exchange">
-                  <i class="fas fa-exchange-alt"></i>
-                </div>
+                <img
+                  src="./css/img/product/Body-Champ-Cardio.png"
+                  alt="Body Champ Cardio"
+                />
+                <div class="container__title text-black">Body Champ Cardio</div>
+                <div class="container__price text-black bold">$342.00</div>
               </div>
-              <img
-                src="./css/img/product/Body-Champ-Cardio.png"
-                alt="Body Champ Cardio"
-              />
-              <div class="container__title text-black">Body Champ Cardio</div>
-              <div class="container__price text-black bold">$342.00</div>
             </div>
             <div class="product__container--items c-12 l-3 m-6">
-              <div class="cart">
-                <div class="cart-items add-cart">
-                  <i class="fas fa-shopping-basket"></i>
+              <div class="product__container--items-div-hover">
+                <div class="cart">
+                  <div class="cart-items add-cart">
+                    <i class="fas fa-shopping-basket"></i>
+                  </div>
+                  <div class="cart-items eyes">
+                    <i class="fas fa-eye"></i>
+                  </div>
+                  <div class="cart-items like">
+                    <i class="fas fa-heart"></i>
+                  </div>
+                  <div class="cart-items exchange">
+                    <i class="fas fa-exchange-alt"></i>
+                  </div>
                 </div>
-                <div class="cart-items eyes">
-                  <i class="fas fa-eye"></i>
+                <img
+                  src="./css/img/product/Body-Solid-GCEC340.png"
+                  alt="Body Solid GCEC340"
+                />
+                <div class="container__title text-black">
+                  Body Solid GCEC340
                 </div>
-                <div class="cart-items like">
-                  <i class="fas fa-heart"></i>
-                </div>
-                <div class="cart-items exchange">
-                  <i class="fas fa-exchange-alt"></i>
-                </div>
+                <div class="container__price text-black bold">$214.00</div>
               </div>
-              <img
-                src="./css/img/product/Body-Solid-GCEC340.png"
-                alt="Body Solid GCEC340"
-              />
-              <div class="container__title text-black">Body Solid GCEC340</div>
-              <div class="container__price text-black bold">$214.00</div>
             </div>
             <div class="product__container--items c-12 l-3 m-6">
-              <div class="cart">
-                <div class="cart-items add-cart">
-                  <i class="fas fa-shopping-basket"></i>
+              <div class="product__container--items-div-hover">
+                <div class="cart">
+                  <div class="cart-items add-cart">
+                    <i class="fas fa-shopping-basket"></i>
+                  </div>
+                  <div class="cart-items eyes">
+                    <i class="fas fa-eye"></i>
+                  </div>
+                  <div class="cart-items like">
+                    <i class="fas fa-heart"></i>
+                  </div>
+                  <div class="cart-items exchange">
+                    <i class="fas fa-exchange-alt"></i>
+                  </div>
                 </div>
-                <div class="cart-items eyes">
-                  <i class="fas fa-eye"></i>
+                <img
+                  src="./css/img/product/Bowflex-BXET116-Elliptical.png"
+                  alt="Bowflex BXET116 Elliptical"
+                />
+                <div class="container__title text-black">
+                  Bowflex BXE116 Elliptical
                 </div>
-                <div class="cart-items like">
-                  <i class="fas fa-heart"></i>
-                </div>
-                <div class="cart-items exchange">
-                  <i class="fas fa-exchange-alt"></i>
-                </div>
+                <div class="container__price text-black bold">$421.00</div>
               </div>
-              <img
-                src="./css/img/product/Bowflex-BXET116-Elliptical.png"
-                alt="Bowflex BXET116 Elliptical"
-              />
-              <div class="container__title text-black">
-                Bowflex BXE116 Elliptical
-              </div>
-              <div class="container__price text-black bold">$421.00</div>
             </div>
             <div class="product__container--items c-12 l-3 m-6">
-              <div class="cart">
-                <div class="cart-items add-cart">
-                  <i class="fas fa-shopping-basket"></i>
+              <div class="product__container--items-div-hover">
+                <div class="cart">
+                  <div class="cart-items add-cart">
+                    <i class="fas fa-shopping-basket"></i>
+                  </div>
+                  <div class="cart-items eyes">
+                    <i class="fas fa-eye"></i>
+                  </div>
+                  <div class="cart-items like">
+                    <i class="fas fa-heart"></i>
+                  </div>
+                  <div class="cart-items exchange">
+                    <i class="fas fa-exchange-alt"></i>
+                  </div>
                 </div>
-                <div class="cart-items eyes">
-                  <i class="fas fa-eye"></i>
-                </div>
-                <div class="cart-items like">
-                  <i class="fas fa-heart"></i>
-                </div>
-                <div class="cart-items exchange">
-                  <i class="fas fa-exchange-alt"></i>
-                </div>
+                <img src="./css/img/product/ETHOS-GHD.png" alt="ETHOS GHD" />
+                <div class="container__title text-black">ETHOS GHD</div>
+                <div class="container__price text-black bold">$152.00</div>
               </div>
-              <img src="./css/img/product/ETHOS-GHD.png" alt="ETHOS GHD" />
-              <div class="container__title text-black">ETHOS GHD</div>
-              <div class="container__price text-black bold">$152.00</div>
             </div>
             <div class="product__container--items c-12 l-3 m-6">
-              <div class="cart">
-                <div class="cart-items add-cart">
-                  <i class="fas fa-shopping-basket"></i>
+              <div class="product__container--items-div-hover">
+                <div class="cart">
+                  <div class="cart-items add-cart">
+                    <i class="fas fa-shopping-basket"></i>
+                  </div>
+                  <div class="cart-items eyes">
+                    <i class="fas fa-eye"></i>
+                  </div>
+                  <div class="cart-items like">
+                    <i class="fas fa-heart"></i>
+                  </div>
+                  <div class="cart-items exchange">
+                    <i class="fas fa-exchange-alt"></i>
+                  </div>
                 </div>
-                <div class="cart-items eyes">
-                  <i class="fas fa-eye"></i>
+                <img
+                  src="./css/img/product/AFG-Pro-7.2AI-Incline.png"
+                  alt="AFG Pro 7.2AI"
+                />
+                <div class="container__title text-black">
+                  AFG Pro 7.2AI Incline
                 </div>
-                <div class="cart-items like">
-                  <i class="fas fa-heart"></i>
-                </div>
-                <div class="cart-items exchange">
-                  <i class="fas fa-exchange-alt"></i>
-                </div>
+                <div class="container__price text-black bold">$252.00</div>
               </div>
-              <img
-                src="./css/img/product/AFG-Pro-7.2AI-Incline.png"
-                alt="AFG Pro 7.2AI"
-              />
-              <div class="container__title text-black">
-                AFG Pro 7.2AI Incline
-              </div>
-              <div class="container__price text-black bold">$252.00</div>
             </div>
             <div class="product__container--items c-12 l-3 m-6">
-              <div class="cart">
-                <div class="cart-items add-cart">
-                  <i class="fas fa-shopping-basket"></i>
+              <div class="product__container--items-div-hover">
+                <div class="cart">
+                  <div class="cart-items add-cart">
+                    <i class="fas fa-shopping-basket"></i>
+                  </div>
+                  <div class="cart-items eyes">
+                    <i class="fas fa-eye"></i>
+                  </div>
+                  <div class="cart-items like">
+                    <i class="fas fa-heart"></i>
+                  </div>
+                  <div class="cart-items exchange">
+                    <i class="fas fa-exchange-alt"></i>
+                  </div>
                 </div>
-                <div class="cart-items eyes">
-                  <i class="fas fa-eye"></i>
-                </div>
-                <div class="cart-items like">
-                  <i class="fas fa-heart"></i>
-                </div>
-                <div class="cart-items exchange">
-                  <i class="fas fa-exchange-alt"></i>
-                </div>
+                <img
+                  src="./css/img/product/Weight-Bench.png"
+                  alt="Weight Bench"
+                />
+                <div class="container__title text-black">Weight Bench</div>
+                <div class="container__price text-black bold">$412.00</div>
               </div>
-              <img
-                src="./css/img/product/Weight-Bench.png"
-                alt="Weight Bench"
-              />
-              <div class="container__title text-black">Weight Bench</div>
-              <div class="container__price text-black bold">$412.00</div>
             </div>
             <div class="product__container--items c-12 l-3 m-6">
-              <div class="cart">
-                <div class="cart-items add-cart">
-                  <i class="fas fa-shopping-basket"></i>
+              <div class="product__container--items-div-hover">
+                <div class="cart">
+                  <div class="cart-items add-cart">
+                    <i class="fas fa-shopping-basket"></i>
+                  </div>
+                  <div class="cart-items eyes">
+                    <i class="fas fa-eye"></i>
+                  </div>
+                  <div class="cart-items like">
+                    <i class="fas fa-heart"></i>
+                  </div>
+                  <div class="cart-items exchange">
+                    <i class="fas fa-exchange-alt"></i>
+                  </div>
                 </div>
-                <div class="cart-items eyes">
-                  <i class="fas fa-eye"></i>
+                <img
+                  src="./css/img/product/ProForm-Hiit-Trainer-Lite.png"
+                  alt="ProForm Hiit Trainer"
+                />
+                <div class="container__title text-black">
+                  ProForm Hiit Trainer Lite 5.9
                 </div>
-                <div class="cart-items like">
-                  <i class="fas fa-heart"></i>
-                </div>
-                <div class="cart-items exchange">
-                  <i class="fas fa-exchange-alt"></i>
-                </div>
+                <div class="container__price text-black bold">$300.00</div>
               </div>
-              <img
-                src="./css/img/product/ProForm-Hiit-Trainer-Lite.png"
-                alt="ProForm Hiit Trainer"
-              />
-              <div class="container__title text-black">
-                ProForm Hiit Trainer Lite 5.9
-              </div>
-              <div class="container__price text-black bold">$300.00</div>
             </div>
             <div class="product__container--items c-12 l-3 m-6">
-              <div class="cart">
-                <div class="cart-items add-cart">
-                  <i class="fas fa-shopping-basket"></i>
+              <div class="product__container--items-div-hover">
+                <div class="cart">
+                  <div class="cart-items add-cart">
+                    <i class="fas fa-shopping-basket"></i>
+                  </div>
+                  <div class="cart-items eyes">
+                    <i class="fas fa-eye"></i>
+                  </div>
+                  <div class="cart-items like">
+                    <i class="fas fa-heart"></i>
+                  </div>
+                  <div class="cart-items exchange">
+                    <i class="fas fa-exchange-alt"></i>
+                  </div>
                 </div>
-                <div class="cart-items eyes">
-                  <i class="fas fa-eye"></i>
-                </div>
-                <div class="cart-items like">
-                  <i class="fas fa-heart"></i>
-                </div>
-                <div class="cart-items exchange">
-                  <i class="fas fa-exchange-alt"></i>
-                </div>
+                <img
+                  src="./css/img/product/Fitness-Gear-Pro.png"
+                  alt="Fitness Gear Pro"
+                />
+                <div class="container__title text-black">Fitness Gear Pro</div>
+                <div class="container__price text-black bold">$124.00</div>
               </div>
-              <img
-                src="./css/img/product/Fitness-Gear-Pro.png"
-                alt="Fitness Gear Pro"
-              />
-              <div class="container__title text-black">Fitness Gear Pro</div>
-              <div class="container__price text-black bold">$124.00</div>
             </div>
           </div>
         </section>
@@ -422,16 +456,16 @@
           </div>
         </section>
         <section class="brand grid wide row">
-          <div class="brand__items l-2 m-4 c-6">
+          <div style="padding-right: 27px" class="brand__items l-2 m-4 c-6">
             <img
               src="./css/img/BrandLogo/fitness-center.png"
               alt="fitness center"
             />
           </div>
-          <div class="brand__items l-2 m-4 c-6">
+          <div style="padding-right: 17px" class="brand__items l-2 m-4 c-6">
             <img src="./css/img/BrandLogo/sports-gym.png" alt="sports gym" />
           </div>
-          <div class="brand__items l-2 m-4 c-6">
+          <div style="padding-right: 7px" class="brand__items l-2 m-4 c-6">
             <img
               src="./css/img/BrandLogo/health-and-fitness.png"
               alt="health and fitness"
@@ -443,13 +477,13 @@
               alt="best local gym"
             />
           </div>
-          <div class="brand__items l-2 m-4 c-6">
+          <div style="padding-left: 10px" class="brand__items l-2 m-4 c-6">
             <img
               src="./css/img/BrandLogo/power-lifter-gymClub.png"
               alt="power lifter gymClub"
             />
           </div>
-          <div class="brand__items l-2 m-4 c-6">
+          <div style="padding-left: 17px" class="brand__items l-2 m-4 c-6">
             <img
               src="./css/img/BrandLogo/fitness-club-and-gym.png"
               alt="fitness club and gym"
