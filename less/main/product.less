@@ -30,14 +30,18 @@
   .product__container {
     margin-top: 36px;
     &--items {
-      position: relative;
       padding: 0 13px;
       transition: all 0.25s;
       border: 1px solid #fff;
       margin-bottom: 68px;
       // text-align: center;
       &-div-hover {
+        position: relative;
+
         border: 1px solid transparent;
+        & img {
+          width: 100%;
+        }
       }
       &:hover .product__container--items-div-hover {
         cursor: pointer;

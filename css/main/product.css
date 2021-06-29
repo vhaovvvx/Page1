@@ -28,14 +28,17 @@
   margin-top: 36px;
 }
 .product.grid.wide .product__container--items {
-  position: relative;
   padding: 0 13px;
   transition: all 0.25s;
   border: 1px solid #fff;
   margin-bottom: 68px;
 }
 .product.grid.wide .product__container--items-div-hover {
+  position: relative;
   border: 1px solid transparent;
+}
+.product.grid.wide .product__container--items-div-hover img {
+  width: 100%;
 }
 .product.grid.wide .product__container--items:hover .product__container--items-div-hover {
   cursor: pointer;
