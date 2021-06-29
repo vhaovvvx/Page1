@@ -29,8 +29,8 @@
   font-weight: bold;
 }
 .slider {
-  max-width: 100%;
-  width: 1920px;
+  max-width: 1920px;
+  width: 100%;
   background: url("../img/slider/backgroundMain.png") no-repeat;
 }
 .slider .header-main {
