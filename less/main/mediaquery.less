@@ -43,9 +43,11 @@
     // max-width: initial !important;
     width: 100%;
   }
-
-  .product.grid.wide .product__container--items {
-    text-align: center;
+  .product__container {
+    &--items {
+      padding: 0;
+      text-align: center;
+    }
   }
   .owl-carousel .owl-item img {
     max-width: 15% !important;
@@ -110,6 +112,7 @@
     &__nav {
       display: none;
     }
+
     .brand__items {
       padding: 0;
     }

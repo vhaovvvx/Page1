@@ -34,7 +34,8 @@
   .product-items {
     width: 100%;
   }
-  .product.grid.wide .product__container--items {
+  .product__container--items {
+    padding: 0;
     text-align: center;
   }
   .owl-carousel .owl-item img {

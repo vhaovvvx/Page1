@@ -38,6 +38,7 @@
   max-width: 1920px;
   width: 100%;
   background: url("../img/slider/backgroundMain.png") no-repeat;
+  background-position: 77% 0;
 }
 .slider .header-main {
   width: 100%;
@@ -217,11 +218,7 @@
   border: 1px solid rgba(221, 221, 221);
   padding: 14px 47px;
   transition: all 0.3s;
-<<<<<<< HEAD
   cursor: pointer;
-=======
-  cursor:pointer;
->>>>>>> refs/remotes/origin/master
 }
 .slider__container.grid.wide .container--btn-shop:hover {
   opacity: 0.6;

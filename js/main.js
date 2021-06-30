@@ -60,7 +60,7 @@ links.forEach((item) => {
 //     headerContainer.style.zIndex = "999";
 //     headerNav.style.height = "66px";
 //   } else {
-//     headerContainer.style.position = "initial";
+//     headerContainer.style.position = "absolute";
 //     headerContainer.style.zIndex = "4";
 //     headerNav.style.height = "100px";
 //   }
