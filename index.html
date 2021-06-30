@@ -45,42 +45,12 @@
       <div class="slider">
         <header class="header-main">
           <div class="header grid wide">
-            <div class="header__logo c-3">
-              <a href="#">
-                <img src="./css/img/logo/logo.png" alt="logo" />
-              </a>
-            </div>
-            <div class="header__nav c-7">
-              <ul class="header__nav--items">
-                <li><a href="#">Home</a></li>
-
-                <li style="margin-left: -1px"><a href="#">Pages</a></li>
-
-                <li style="margin-left: -1px"><a href="#">Classes</a></li>
-
-                <li style="margin-left: 1px"><a href="#">Portfolio</a></li>
-
-                <li><a href="#">Blog</a></li>
-
-                <li><a href="#">Contacts</a></li>
-              </ul>
-            </div>
-            <div class="header__user c-2">
-              <div class="header__user--bar items-show">
-                <div class="header__user--bar-nav">
+            <div class="header__logo c-3 m-3 l-3">
+              <div class="header__logo--bar items-show">
+                <div class="header__logo--bar-nav">
                   <ul class="header__nav--items">
                     <i class="fas fa-times"></i>
-                    <div class="tools">
-                      <div class="header__user--items-2 separate">
-                        <i class="fas fa-search"></i>
-                      </div>
-                      <div class="header__user--items-2 separate">
-                        <i class="fas fa-shopping-basket"></i>
-                      </div>
-                      <div class="header__user--items-2">
-                        <i class="fas fa-user"></i>
-                      </div>
-                    </div>
+
                     <li><a href="#">Home</a></li>
 
                     <li><a href="#">Pages</a></li>
@@ -96,6 +66,26 @@
                 </div>
                 <i class="fas fa-bars"></i>
               </div>
+              <a href="#" class="btn-logo">
+                <img src="./css/img/logo/logo.png" alt="logo" />
+              </a>
+            </div>
+            <div class="header__nav c-6 m-6 l-6">
+              <ul class="header__nav--items">
+                <li><a href="#">Home</a></li>
+
+                <li style="margin-left: -1px"><a href="#">Pages</a></li>
+
+                <li style="margin-left: -1px"><a href="#">Classes</a></li>
+
+                <li style="margin-left: 1px"><a href="#">Portfolio</a></li>
+
+                <li><a href="#">Blog</a></li>
+
+                <li><a href="#">Contacts</a></li>
+              </ul>
+            </div>
+            <div class="header__user c-3 m-3 l-3">
               <div class="tools">
                 <div class="header__user--items separate">
                   <i class="fas fa-search"></i>
@@ -112,20 +102,24 @@
         </header>
 
         <section class="slider__container grid wide">
-          <h1 class="container__title">Dumbbells Shop</h1>
-          <h2 class="container__title-min">Best body fitness</h2>
-          <p class="container__content">
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry.<br />Lorem Ipsum has been the industry's standard dummy
-            text ever since the 1500s, when an unknown printer
-          </p>
-          <a data-link="product" class="container--btn-shop scroll_to"
-            >shop now</a
-          >
+          <div>
+            <h1 class="container__title">Dumbbells Shop</h1>
+            <h2 class="container__title-min">Best body fitness</h2>
+            <p class="container__content">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry.<br />Lorem Ipsum has been the industry's standard dummy
+              text ever since the 1500s, when an unknown printer
+            </p>
+            <a data-link="product" class="container--btn-shop scroll_to"
+              >shop now</a
+            >
+          </div>
         </section>
 
         <section class="category__product grid wide row">
-          <div class="product__dumbbells l-4 m-12 c-12">
+          <div
+            class="product__dumbbells flex-items-content-center l-4 m-12 c-12"
+          >
             <div class="product-items product__dumbbells--img">
               <!-- <img src="./css/img/categoryProduct/dubbells.png" alt="" /> -->
             </div>
@@ -145,7 +139,9 @@
             </div>
           </div>
 
-          <div class="product__strength l-4 m-12 c-12">
+          <div
+            class="product__strength flex-items-content-center l-4 m-12 c-12"
+          >
             <div class="product-items product__strength--content">
               <h4 class="product__content--logo">
                 <img
@@ -165,7 +161,7 @@
             </div>
           </div>
 
-          <div class="product__power l-4 m-12 c-12">
+          <div class="product__power flex-items-content-center l-4 m-12 c-12">
             <div class="product-items product__power--img">
               <!-- <img src="./css/img/categoryProduct/power.png" alt="" /> -->
             </div>
@@ -189,11 +185,13 @@
         </section>
 
         <section class="product grid wide" id="product">
-          <ul class="product__menu">
-            <li class="product__menu--btn text-black actived">top sellers</li>
-            <li class="product__menu--btn text-black">featured</li>
-            <li class="product__menu--btn text-black">most reviews</li>
-          </ul>
+          <div class="product__border">
+            <ul class="product__menu">
+              <li class="product__menu--btn text-black actived">top sellers</li>
+              <li class="product__menu--btn text-black">featured</li>
+              <li class="product__menu--btn text-black">most reviews</li>
+            </ul>
+          </div>
           <div class="product__container row">
             <div class="product__container--items c-12 l-3 m-6">
               <div class="product__container--items-div-hover">
@@ -456,16 +454,16 @@
           </div>
         </section>
         <section class="brand grid wide row">
-          <div style="padding-right: 27px" class="brand__items l-2 m-4 c-6">
+          <div  class="brand__items l-2 m-4 c-6">
             <img
               src="./css/img/BrandLogo/fitness-center.png"
               alt="fitness center"
             />
           </div>
-          <div style="padding-right: 17px" class="brand__items l-2 m-4 c-6">
+          <div  class="brand__items l-2 m-4 c-6">
             <img src="./css/img/BrandLogo/sports-gym.png" alt="sports gym" />
           </div>
-          <div style="padding-right: 7px" class="brand__items l-2 m-4 c-6">
+          <div  class="brand__items l-2 m-4 c-6">
             <img
               src="./css/img/BrandLogo/health-and-fitness.png"
               alt="health and fitness"
@@ -477,13 +475,13 @@
               alt="best local gym"
             />
           </div>
-          <div style="padding-left: 10px" class="brand__items l-2 m-4 c-6">
+          <div  class="brand__items l-2 m-4 c-6">
             <img
               src="./css/img/BrandLogo/power-lifter-gymClub.png"
               alt="power lifter gymClub"
             />
           </div>
-          <div style="padding-left: 17px" class="brand__items l-2 m-4 c-6">
+          <div  class="brand__items l-2 m-4 c-6">
             <img
               src="./css/img/BrandLogo/fitness-club-and-gym.png"
               alt="fitness club and gym"
@@ -524,7 +522,7 @@
             </ul>
           </div>
           <div class="footer__info grid wide row">
-            <ul class="footer__info--nav contact l-3 m-3 c-6">
+            <ul class="footer__info--nav contact l-3 m-6 c-12">
               <h3>contact us</h3>
               <li class="footer__info--nav--item">
                 <i class="fas fa-map-marker-alt"></i>
@@ -543,7 +541,7 @@
                 <a href="#" class="test">9:00 - 20:00 All day</a>
               </li>
             </ul>
-            <ul class="footer__info--nav myaccount l-3 m-3 c-6">
+            <ul class="footer__info--nav myaccount l-3 m-6 c-12">
               <h3>my account</h3>
               <li class="footer__info--nav--item">
                 <a href="#" class="test">My account</a>
@@ -560,7 +558,7 @@
                 <a href="#" class="test">Login</a>
               </li>
             </ul>
-            <ul class="footer__info--nav information l-3 m-3 c-6">
+            <ul class="footer__info--nav information l-3 m-6 c-12">
               <h3>information</h3>
               <li class="footer__info--nav--item">
                 <a href="#" class="test">About us</a>
@@ -577,7 +575,7 @@
                 <a href="#" class="test">Privacy Policy</a>
               </li>
             </ul>
-            <ul class="footer__info--nav quick-link l-3 m-3 c-6">
+            <ul class="footer__info--nav quick-link l-3 m-6 c-12">
               <h3>quick link</h3>
               <li class="footer__info--nav--item">
                 <a href="#" class="test">New user</a>

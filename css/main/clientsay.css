@@ -45,3 +45,6 @@
   margin-top: 7px;
   font-size: 14px;
 }
+.client-say__slider .slider-client-say .client-say__slider .owl-dots.active span {
+  color: red;
+}

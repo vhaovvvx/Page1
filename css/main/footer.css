@@ -21,6 +21,12 @@
 .footer__slogan--nav {
   justify-content: center;
 }
+.footer__slogan--nav .nav--item:hover .fa-facebook-f path,
+.footer__slogan--nav .nav--item:hover .fa-twitter path,
+.footer__slogan--nav .nav--item:hover .fa-google-plus-g path,
+.footer__slogan--nav .nav--item:hover .fa-youtube path {
+  opacity: 0.5;
+}
 .footer__slogan--nav .fa-facebook-f path,
 .footer__slogan--nav .fa-twitter path,
 .footer__slogan--nav .fa-google-plus-g path,
@@ -74,6 +80,9 @@
   line-height: 2.5;
   margin: 14px 0;
   text-transform: none;
+}
+.footer__info--nav .footer__info--nav--item .test:hover {
+  opacity: 0.5;
 }
 .footer__info--nav .footer__info--nav--item .fa-map-marker-alt path,
 .footer__info--nav .fa-phone path,

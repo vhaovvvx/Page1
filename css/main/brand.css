@@ -4,6 +4,21 @@
   text-align: center;
   border-top: 1px solid #cccccc;
 }
+.brand div:nth-child(1) {
+  padding-right: 27px;
+}
+.brand div:nth-child(2) {
+  padding-right: 17px;
+}
+.brand div:nth-child(3) {
+  padding-right: 7px;
+}
+.brand div:nth-child(5) {
+  padding-left: 10px;
+}
+.brand div:nth-child(6) {
+  padding-left: 17px;
+}
 .brand__items {
   padding: 38px 0;
 }

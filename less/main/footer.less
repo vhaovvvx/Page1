@@ -22,6 +22,13 @@
       margin: 0 auto;
     }
     &--nav {
+      .nav--item:hover .fa-facebook-f path,
+      .nav--item:hover .fa-twitter path,
+      .nav--item:hover .fa-google-plus-g path,
+      .nav--item:hover .fa-youtube path {
+        opacity: 0.5;
+      }
+
       .fa-facebook-f path,
       .fa-twitter path,
       .fa-google-plus-g path,
@@ -33,7 +40,6 @@
       .fa-google-plus-g,
       .fa-youtube {
         line-height: 1.667;
-
         font-size: @fontSize18;
       }
       justify-content: center;
@@ -80,6 +86,9 @@
         line-height: 2.5;
         margin: 14px 0;
         text-transform: none;
+        &:hover {
+          opacity: 0.5;
+        }
       }
       .footer__info--nav--item .fa-map-marker-alt path,
       .fa-phone path,
