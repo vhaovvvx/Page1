@@ -217,7 +217,11 @@
   border: 1px solid rgba(221, 221, 221);
   padding: 14px 47px;
   transition: all 0.3s;
+<<<<<<< HEAD
   cursor: pointer;
+=======
+  cursor:pointer;
+>>>>>>> refs/remotes/origin/master
 }
 .slider__container.grid.wide .container--btn-shop:hover {
   opacity: 0.6;
