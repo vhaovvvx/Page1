@@ -12,7 +12,8 @@
     text-transform: uppercase;
     line-height: 1.333;
     opacity: 1;
-    display: flex;
+    .flex-display();
+
     // flex-wrap:;
     // border-bottom: 1px solid rgb(221, 221, 221);
     & .actived {
@@ -20,13 +21,12 @@
       border-bottom: 1px solid rgb(221, 47, 49);
     }
     & li {
-      padding: 28px 18px;
+      padding: 25px 17px;
       text-transform: uppercase;
       cursor: pointer;
       transition: all 0.25s;
       padding-bottom: 13px;
       &:hover {
-        // color: rgb(221, 221, 221);
         opacity: 0.6;
       }
     }
@@ -37,19 +37,20 @@
       cursor: pointer;
       transition: all 0.25s;
       border: 1px solid #fff;
-      margin-bottom: 68px;
-      // text-align: center;
+      margin-bottom: 47px;
       &-div-hover {
-        position: relative;
+        height: 329px;
 
+        position: relative;
         border: 1px solid transparent;
         & img {
           width: 100%;
+          max-width: 270px;
         }
       }
       &:focus .product__container--items-div-hover {
         border: 1px solid rgba(0, 0, 0, 0.2);
-        box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.2);
+        box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);
       }
 
       &:focus .cart {
@@ -57,12 +58,13 @@
       }
       & .cart {
         position: absolute;
-        display: flex;
+        .flex-display();
+
         opacity: 0;
         flex-direction: column;
         text-align: center;
-        top: 14%;
-        right: 11%;
+        top: 12%;
+        right: 7%;
         transform: translate(-10%, -10%);
         z-index: 2;
         transition: all 0.3s;
@@ -70,15 +72,17 @@
         &-items {
           border: 1px solid rgb(119, 119, 119);
           width: 35px;
-          height: 30px;
-          margin-bottom: 21px;
+          height: 35px;
+          margin-bottom: 14px;
           align-items: center;
           text-align: center;
           justify-content: center;
-          display: flex;
+          .flex-display();
+
           transition: all 0.3s;
         }
         .cart-items:hover {
+          border: none;
           background-color: red;
         }
         .cart-items:hover path {
@@ -101,12 +105,12 @@
     .container__title {
       font-size: 14px;
       margin-top: 20px;
-      margin-left: 30px;
+      margin-left: 28px;
       line-height: 1.714;
     }
     .container__price {
       margin-top: 3px;
-      margin-left: 30px;
+      margin-left: 28px;
       font-size: 14px;
     }
   }

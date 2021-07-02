@@ -1,4 +1,5 @@
-/* @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap"); */
+/*reset css*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,700;1,100;1,200;1,300&display=swap');
 
 html,
 body,
@@ -111,7 +112,7 @@ q:before,
 q:after,
 blockquote:before,
 blockquote:after {
-  content: "";
+  content: '';
   content: none;
 }
 a img {
@@ -156,15 +157,13 @@ summary {
 }
 
 .grid.wide {
-  max-width: 1173px;
+  max-width: 1169px;
   margin: 0 auto;
 }
 
 .row {
   display: flex;
   flex-wrap: wrap;
-  /* margin-left: -4px;
-  margin-right: -4px; */
 }
 
 .row.no-gutters {
@@ -429,8 +428,8 @@ summary {
 /* PC medium resolution > */
 @media (min-width: 1113px) {
   .row {
-    margin-left: -12px;
-    margin-right: -12px;
+    margin-left: -15px;
+    margin-right: -15px;
   }
 
   .row.sm-gutter {
@@ -439,8 +438,8 @@ summary {
   }
 
   .col {
-    padding-left: 12px;
-    padding-right: 12px;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 
   .row.sm-gutter .col {
@@ -592,8 +591,8 @@ summary {
   }
 
   .wide .row {
-    margin-left: -12px;
-    margin-right: -12px;
+    margin-left: -15px;
+    margin-right: -15px;
   }
 
   .wide .row.sm-gutter {
@@ -602,8 +601,8 @@ summary {
   }
 
   .wide .col {
-    padding-left: 12px;
-    padding-right: 12px;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 
   .wide .row.sm-gutter .col {
@@ -753,7 +752,7 @@ summary {
 @keyframes topdown {
   from {
     opacity: 0;
-    transform: translateY(-300%);
+    transform: translateY(-200%);
   }
   to {
     opacity: 1;
@@ -833,8 +832,15 @@ summary {
   -webkit-text-fill-color: white;
   transition: background-color 5000s ease-in-out 0s;
 } */
-
 * {
-  font-family: "Poppins" !important;
-  color: rgb(255, 255, 255);
+  font-family: 'Poppins' !important;
+}
+:-webkit-any(article, aside, nav, section) h1,
+p {
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+  padding-block-start: 0;
+  padding-block-end: 0;
 }

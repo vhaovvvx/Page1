@@ -1,4 +1,15 @@
+.flex-display(@display: flex) {
+  display: ~'-webkit-@{display}';
+  display: ~'-ms-@{display}box'; // IE10 uses -ms-flexbox
+  display: ~'-ms-@{display}'; // IE11
+  display: @display;
+}
+
 @media (max-width: 740px) {
+  .grid.wide {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
   .slider .header.grid.wide {
     justify-content: space-between;
   }
@@ -12,7 +23,7 @@
 
     &--items.separate::after {
       position: absolute;
-      content: "";
+      content: '';
       display: block;
       height: 18px;
       border-left: 1px solid rgb(165, 156, 156);
@@ -30,13 +41,23 @@
   .slider__container .container__title {
     font-size: 53.5px !important;
   }
+
+  .product-items {
+    max-width: initial !important;
+  }
+  .category__product.grid.wide .product__dumbbells--img,
+  .category__product.grid.wide .product__--strengthimg,
+  .category__product.grid.wide .product__power--img {
+    background-size: 100%;
+  }
+
   .product__dumbbells,
   .product__strength,
   .product__power {
     margin: 15px 0;
   }
   .product__strength {
-    display: flex;
+    .flex-display();
     flex-direction: column-reverse;
   }
   .product-items {
@@ -77,7 +98,7 @@
   .product__dumbbells,
   .product__strength,
   .product__power {
-    display: flex;
+    .flex-display();
     flex-direction: row;
     align-items: center;
     justify-content: center;
@@ -146,8 +167,6 @@
   }
   .grid.wide.row,
   .grid.wide {
-    padding-left: 4px;
-    padding-right: 4px;
   }
 }
 
