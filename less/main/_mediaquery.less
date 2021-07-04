@@ -1,10 +1,3 @@
-.flex-display(@display: flex) {
-  display: ~'-webkit-@{display}';
-  display: ~'-ms-@{display}box'; // IE10 uses -ms-flexbox
-  display: ~'-ms-@{display}'; // IE11
-  display: @display;
-}
-
 @media (max-width: 740px) {
   .grid.wide {
     padding-left: 8px;
@@ -12,8 +5,6 @@
   }
   .slider .header.grid.wide {
     justify-content: space-between;
-  }
-  .header__logo {
   }
 
   .header__user {
@@ -42,28 +33,16 @@
     font-size: 53.5px !important;
   }
 
-  .product-items {
-    max-width: initial !important;
-  }
-  .category__product.grid.wide .product__dumbbells--img,
-  .category__product.grid.wide .product__--strengthimg,
-  .category__product.grid.wide .product__power--img {
-    background-size: 100%;
-  }
-
   .product__dumbbells,
   .product__strength,
   .product__power {
     margin: 15px 0;
   }
   .product__strength {
-    .flex-display();
-    flex-direction: column-reverse;
+    .flex-display;
+    .flex-direction(column-reverse);
   }
-  .product-items {
-    // max-width: initial !important;
-    width: 100%;
-  }
+
   .product__container {
     &--items {
       padding: 0;
@@ -78,11 +57,7 @@
     text-align: center;
     &--nav {
       margin-top: 40px;
-      &.contact,
-      &.myaccount,
-      &.information,
-      &.quick-link {
-      }
+
       & h3 {
         font-size: 16px;
       }
@@ -92,32 +67,31 @@
 
 @media (min-width: 740px) and (max-width: 1024px) {
   .slider .header.grid.wide {
-    justify-content: space-between;
+    .flex-justify(space-between);
+  }
+
+  .grid.wide {
+    padding-left: 8px;
+    padding-right: 8px;
   }
 
   .product__dumbbells,
   .product__strength,
   .product__power {
     .flex-display();
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
+    .flex-direction(row);
+    .full-center(center);
     margin: 15px 0;
   }
 }
 
 @media (min-width: 1024px) and (max-width: 1311px) {
-  // .header__logo {
-  //   &--bar {
-  //     display: flex !important;
-  //     position: absolute;
-  //     right: 5px;
-  //     transform: translateY(-50%);
-  //   }
-  // }
   .header__nav {
     transition: 1s ease-in-out;
     transform: translateY(0);
+  }
+  .brand__items {
+    display: flex !important;
   }
 }
 
@@ -157,16 +131,11 @@
       right: 5px;
       transform: translateY(-50%);
     }
-    &--items {
-      // display: none;
-    }
+
     .header__nav {
       transition: 1s ease-in-out;
       transform: translateY(0);
     }
-  }
-  .grid.wide.row,
-  .grid.wide {
   }
 }
 

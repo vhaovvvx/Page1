@@ -1,14 +1,16 @@
 .brand {
-  border-top: 1px solid rgb(204, 204, 204);
   & .row {
-    justify-content: center;
-    align-items: center;
+    border-top: 1px solid @rgbwhite;
     text-align: center;
+    .full-center(center);
   }
   &__items {
     height: 152px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    .flex-display;
+    .full-center(center);
+    img:hover {
+      filter: brightness(1.5);
+      cursor: pointer;
+    }
   }
 }

@@ -1,8 +1,20 @@
+@colorBlack: rgb(0, 0, 0);
+@rgbwhite: rgb(255, 255, 255);
+@gray: rgb(119, 119, 119);
+
+@fontSize18: 18px;
+@fontSize14: 14px;
+
 .flex-display(@display: flex) {
   display: ~'-webkit-@{display}';
   display: ~'-ms-@{display}box'; // IE10 uses -ms-flexbox
   display: ~'-ms-@{display}'; // IE11
   display: @display;
+}
+
+.full-center(@center) {
+  .flex-justify(@center);
+  .flex-align-items(@center);
 }
 
 .flex-justify(@justifyStyle) {

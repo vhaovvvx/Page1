@@ -1,12 +1,9 @@
-@gray: rgb(119, 119, 119);
-@fontSize18: 18px;
-
 .footer {
   background-color: rgb(34, 34, 34);
   &__slogan {
     .flex-display();
-    flex-direction: column;
-    justify-content: center;
+    .flex-direction(column);
+    .flex-justify(center);
     text-align: center;
     height: 352px;
 
@@ -16,10 +13,10 @@
     }
     &--content {
       max-width: 748px;
-      font-size: 14px;
+      font-size: @fontSize14;
       color: @gray;
       line-height: 1.714;
-      font-size: 14px;
+      font-size: @fontSize14;
       padding: 25px 0;
       margin: 0 auto;
     }
@@ -53,11 +50,13 @@
     }
   }
   &__info {
-    border-top: 1px solid rgb(68, 68, 68);
+    & .row {
+      border-top: 1px solid rgb(68, 68, 68);
+    }
     &--nav {
       margin-top: 70px;
       font-size: @fontSize18;
-      color: rgb(255, 255, 255);
+      color: @rgbwhite;
       text-transform: uppercase;
       line-height: 1.667;
       &--title {
@@ -72,7 +71,7 @@
         text-decoration: none !important;
         all: revert;
         font-weight: 400;
-        font-size: 14px;
+        font-size: @fontSize14;
         color: @gray;
         line-height: 2.5;
         margin: 14px 0;
@@ -99,16 +98,14 @@
   }
   &__copy-right {
     background-color: rgb(17, 17, 17);
-    font-size: 14px;
+    font-size: @fontSize14;
     line-height: 2.143;
     & p {
       .flex-display();
 
-      justify-content: center;
-      align-items: center;
+      .full-center(center);
       margin-top: 33px;
       height: 50px;
-      // line-height: 65px;
       color: @gray;
       text-align: center;
     }
