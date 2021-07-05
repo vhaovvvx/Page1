@@ -662,6 +662,9 @@
 .client-say__slider .slider-client-say .client-say__slider .owl-dots.active span {
   color: red;
 }
+.brand {
+  border-top: 1px solid #777777;
+}
 .brand .row {
   border-top: 1px solid #ffffff;
   text-align: center;
