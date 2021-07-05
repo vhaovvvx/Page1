@@ -176,7 +176,7 @@
   left: 45%;
 }
 .slider .header.grid.wide .header__logo--bar-nav .header__nav--items a {
-  color: colorBlack;
+  color: #000000;
 }
 .slider .header.grid.wide .header__logo--bar-nav .header__nav--items li {
   border-bottom: 1px solid #b9b6b6;
