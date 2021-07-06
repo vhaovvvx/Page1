@@ -1,7 +1,7 @@
 .product.grid.wide {
   margin-top: 71px;
   .product__border {
-    border-bottom: 1px solid rgb(221, 221, 221);
+    border-bottom: 1px solid @rgbwhite;
   }
   .product__menu {
     font-size: @fontSize18;
@@ -11,30 +11,31 @@
     opacity: 1;
     .flex-display();
     & .actived {
-      color: rgb(221, 47, 49);
-      border-bottom: 1px solid rgb(221, 47, 49);
+      color: @colorRedActive;
+      border-bottom: 1px solid @colorRedActive;
     }
     & li {
       padding: 25px 17px;
       text-transform: uppercase;
       cursor: pointer;
-      transition: all 0.25s;
+      transition: all .25s;
       padding-bottom: 13px;
       &:hover {
-        opacity: 0.6;
+        opacity: .6;
       }
     }
   }
   .product__container {
     margin-top: 36px;
     &--items {
+      
       cursor: pointer;
-      transition: all 0.25s;
+      transition: all .25s;
       border: 1px solid @rgbwhite;
       margin-bottom: 47px;
+      text-align: center;
       &-div-hover {
         height: 329px;
-
         position: relative;
         border: 1px solid transparent;
         & img {
@@ -42,14 +43,7 @@
           max-width: 270px;
         }
       }
-      &:focus .product__container--items-div-hover {
-        border: 1px solid rgba(0, 0, 0, 0.2);
-        box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);
-      }
-
-      &:focus .cart {
-        opacity: 1;
-      }
+      
       & .cart {
         position: absolute;
         .flex-display();
@@ -61,10 +55,10 @@
         right: 7%;
         transform: translate(-10%, -10%);
         z-index: 2;
-        transition: all 0.3s;
+        transition: all .3s;
 
         &-items {
-          border: 1px solid rgb(119, 119, 119);
+          border: 1px solid @gray;
           width: 35px;
           height: 35px;
           margin-bottom: 14px;
@@ -73,11 +67,11 @@
           border-radius: 10px 0 10px 0;
           .flex-display();
 
-          transition: all 0.3s;
+          transition: all .3s;
         }
         .cart-items:hover {
           border: none;
-          background-color: red;
+          background-color: @colorRed;
         }
         .cart-items:hover path {
           color: @rgbwhite;
