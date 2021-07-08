@@ -784,7 +784,7 @@ summary {
     transform: translateX(40vw);
   }
   100% {
-    opacity: 0.4;
+    opacity: .4;
     -webkit-transform: translateX(120vw);
     transform: translateX(120vw);
   }
