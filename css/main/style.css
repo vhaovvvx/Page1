@@ -778,7 +778,7 @@
   padding-bottom: 5px;
 }
 .footer__info--nav .footer__info--nav--item .test {
-  all: revert;
+  
   font-weight: 400;
   font-size: 14px;
   color: #777777;
